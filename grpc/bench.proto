@@ -1,0 +1,11 @@
+syntax= "proto3";
+
+package grpc_bench;
+
+service TestService {
+    rpc SendTest (TestMessage) returns (TestMessage) {}
+}
+
+message TestMessage {
+    string msg = 1;
+}
